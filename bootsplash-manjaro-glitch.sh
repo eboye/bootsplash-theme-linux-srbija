@@ -36,7 +36,7 @@ convert -alpha remove \
 	--bg_red 0x00 \
 	--bg_green 0x00 \
 	--bg_blue 0x00 \
-	--frame_ms 100 \
+	--frame_ms 48 \
 	--picture \
 	--pic_width $LOGO_WIDTH \
 	--pic_height $LOGO_HEIGHT \
