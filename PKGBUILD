@@ -1,22 +1,21 @@
-# Maintainer: Vladimir Yerilov <openmindead AT gmail DOT com>
-pkgbase=bootsplash-themes
-pkgname=('bootsplash-theme-manjaro-muser')
-pkgver=0.1
-pkgrel=4
-url="https://github.com/openmindead/bootsplash-theme-manjaro-muser"
-arch=('x86_64')
-license=('GPL')
+# Maintainer: Andrey Alekseev <andrey.android7890@gmail.com>
 
-depends=('systemd')
+pkgname=('bootsplash-theme-manjaro-glitch')
+pkgver=1.0
+pkgrel=1
+arch=('x86_64')
+pkgdesc="Simple Manjaro Bootsplash with cool glitch effect"
+license=('GPL')
+depends=()
+optdepends=('bootsplash-systemd: for bootsplash functionality')
 builddepends=('imagemagick')
-optdepends=('bootsplash-systemd: for better interration of bootsplash')
 options=('!libtool' '!emptydirs')
 
 source=('bootsplash-packer'
-	'bootsplash-theme-manjaro-muser.sh'
-	'bootsplash-theme-manjaro-muser.initcpio_install'
-	'spinner.gif'
-	'no.png')
+	'bootsplash-manjaro-glitch.sh'
+	'bootsplash-manjaro-glitch.initcpio_install'
+	'logo.png'
+	'logo.tar.xz')
 
 sha256sums=('SKIP'
             'SKIP'
@@ -26,13 +25,14 @@ sha256sums=('SKIP'
 
 build() {
   cd "$srcdir"
-  sh ./bootsplash-theme-manjaro-muser.sh
+  bsdtar -xf logo.tar.xz
+  sh ./bootsplash-manjaro-glitch.sh
 }
 
-package_bootsplash-theme-manjaro-muser() {
-  pkgdesc="'Manjaro' branded Bootsplash Theme for Manjaro Linux"
+package_bootsplash-theme-manjaro-glitch() {
+  pkgdesc="Simple Manjaro Bootsplash with cool glitch effect"
   cd "$srcdir"
 
-  install -Dm644 "$srcdir/bootsplash-theme-manjaro-muser" "$pkgdir/usr/lib/firmware/bootsplash-themes/manjaro-muser/bootsplash"
-  install -Dm644 "$srcdir/bootsplash-theme-manjaro-muser.initcpio_install" "$pkgdir/usr/lib/initcpio/install/bootsplash-theme-manjaro-muser"
-} 
+  install -Dm644 "$srcdir/bootsplash-manjaro-glitch" "$pkgdir/usr/lib/firmware/bootsplash-themes/manjaro-glitch/bootsplash"
+  install -Dm644 "$srcdir/bootsplash-manjaro-glitch.initcpio_install" "$pkgdir/usr/lib/initcpio/install/bootsplash-manjaro-glitch"
+}
