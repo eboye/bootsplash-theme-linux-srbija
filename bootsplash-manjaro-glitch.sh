@@ -21,10 +21,7 @@ convert -alpha remove \
 	$LOGO \
 	logo.rgb
 
-convert -alpha remove \
-	-background "#000000" \
-	$THROBBER \
-	throbber%02d.rgb
+convert -alpha remove -background "#000000" throbber%02d.rgb
 
 
 #make clean
@@ -36,7 +33,7 @@ convert -alpha remove \
 	--bg_red 0x00 \
 	--bg_green 0x00 \
 	--bg_blue 0x00 \
-	--frame_ms 48 \
+	--frame_ms 100 \
 	--picture \
 	--pic_width $LOGO_WIDTH \
 	--pic_height $LOGO_HEIGHT \
@@ -71,57 +68,6 @@ convert -alpha remove \
 	--blob throbber19.rgb \
 	--blob throbber20.rgb \
 	--blob throbber21.rgb \
-	--blob throbber22.rgb \
-	--blob throbber23.rgb \
-	--blob throbber24.rgb \
-	--blob throbber25.rgb \
-	--blob throbber26.rgb \
-	--blob throbber27.rgb \
-	--blob throbber28.rgb \
-	--blob throbber29.rgb \
-	--blob throbber30.rgb \
-	--blob throbber31.rgb \
-	--blob throbber32.rgb \
-	--blob throbber33.rgb \
-	--blob throbber34.rgb \
-	--blob throbber35.rgb \
-	--blob throbber36.rgb \
-	--blob throbber37.rgb \
-	--blob throbber38.rgb \
-	--blob throbber39.rgb \
-	--blob throbber40.rgb \
-	--blob throbber41.rgb \
-	--blob throbber42.rgb \
-	--blob throbber43.rgb \
-	--blob throbber44.rgb \
-	--blob throbber45.rgb \
-	--blob throbber46.rgb \
-	--blob throbber47.rgb \
-	--blob throbber48.rgb \
-	--blob throbber49.rgb \
-	--blob throbber50.rgb \
-	--blob throbber51.rgb \
-	--blob throbber52.rgb \
-	--blob throbber53.rgb \
-	--blob throbber54.rgb \
-	--blob throbber55.rgb \
-	--blob throbber56.rgb \
-	--blob throbber57.rgb \
-	--blob throbber58.rgb \
-	--blob throbber59.rgb \
-	--blob throbber60.rgb \
-	--blob throbber61.rgb \
-	--blob throbber62.rgb \
-	--blob throbber63.rgb \
-	--blob throbber64.rgb \
-	--blob throbber65.rgb \
-	--blob throbber66.rgb \
-	--blob throbber67.rgb \
-	--blob throbber68.rgb \
-	--blob throbber69.rgb \
-	--blob throbber70.rgb \
-	--blob throbber71.rgb \
-	--blob throbber72.rgb \
 	bootsplash-manjaro-glitch
 
 rm *.rgb
