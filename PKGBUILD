@@ -14,8 +14,8 @@ options=('!libtool' '!emptydirs')
 source=('bootsplash-packer'
 	'bootsplash-manjaro-glitch.sh'
 	'bootsplash-manjaro-glitch.initcpio_install'
-	'logo.png'
-	'logo.tar.xz')
+	'logo.gif'
+	'spinner.gif')
 
 sha256sums=('SKIP'
             'SKIP'
