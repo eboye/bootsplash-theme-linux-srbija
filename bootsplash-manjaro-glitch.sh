@@ -21,7 +21,10 @@ convert -alpha remove \
 	$LOGO \
 	logo.rgb
 
-convert -alpha remove -background "#000000" throbber%02d.rgb
+convert -alpha remove \
+	-background "#000000" \
+	$THROBBER \
+	throbber%02d.rgb
 
 
 #make clean
