@@ -1,10 +1,10 @@
 # Maintainer: Andrey Alekseev <andrey.android7890@gmail.com>
 
-pkgname=('bootsplash-theme-manjaro-glitch')
+pkgname=('bootsplash-theme-linux-srbija')
 pkgver=1.0
 pkgrel=1
 arch=('x86_64')
-pkgdesc="Simple Manjaro Bootsplash with cool glitch effect"
+pkgdesc="Simple Manjaro Bootsplash with Android Srbija theme"
 license=('GPL')
 depends=()
 optdepends=('bootsplash-systemd: for bootsplash functionality')
@@ -12,8 +12,8 @@ builddepends=('imagemagick')
 options=('!libtool' '!emptydirs')
 
 source=('bootsplash-packer'
-	'bootsplash-manjaro-glitch.sh'
-	'bootsplash-manjaro-glitch.initcpio_install'
+	'bootsplash-linux-srbija.sh'
+	'bootsplash-linux-srbija.initcpio_install'
 	'logo.gif'
 	'spinner.gif')
 
@@ -25,13 +25,13 @@ sha256sums=('SKIP'
 
 build() {
   cd "$srcdir"
-  sh ./bootsplash-manjaro-glitch.sh
+  sh ./bootsplash-linux-srbija.sh
 }
 
-package_bootsplash-theme-manjaro-glitch() {
-  pkgdesc="Simple Manjaro Bootsplash with cool glitch effect"
+package_bootsplash-theme-linux-srbija() {
+  pkgdesc="Simple Manjaro Bootsplash with Android Srbija theme"
   cd "$srcdir"
 
-  install -Dm644 "$srcdir/bootsplash-manjaro-glitch" "$pkgdir/usr/lib/firmware/bootsplash-themes/manjaro-glitch/bootsplash"
-  install -Dm644 "$srcdir/bootsplash-manjaro-glitch.initcpio_install" "$pkgdir/usr/lib/initcpio/install/bootsplash-manjaro-glitch"
+  install -Dm644 "$srcdir/bootsplash-linux-srbija" "$pkgdir/usr/lib/firmware/bootsplash-themes/linux-srbija/bootsplash"
+  install -Dm644 "$srcdir/bootsplash-linux-srbija.initcpio_install" "$pkgdir/usr/lib/initcpio/install/bootsplash-linux-srbija"
 }

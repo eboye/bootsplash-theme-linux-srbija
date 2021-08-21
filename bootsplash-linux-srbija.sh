@@ -32,7 +32,7 @@ convert -alpha remove \
 #make bootsplash-packer
 
 
-# Let's put Tux in the center of an orange background.
+# Let's put Tux in the center of an black background.
 ./bootsplash-packer \
 	--bg_red 0x00 \
 	--bg_green 0x00 \
@@ -74,20 +74,20 @@ convert -alpha remove \
 	--blob logo27.rgb \
 	--blob logo28.rgb \
 	--blob logo29.rgb \
-	--blob logo30.rgb \
-	--blob logo31.rgb \
-	--blob logo32.rgb \
-	--blob logo33.rgb \
-	--blob logo34.rgb \
-	--blob logo35.rgb \
-	--blob logo36.rgb \
-	--blob logo37.rgb \
-	--blob logo38.rgb \
-	--blob logo39.rgb \
-	--blob logo40.rgb \
-	--blob logo41.rgb \
-	--blob logo42.rgb \
-	--blob logo43.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
+	--blob logo29.rgb \
 	--picture \
 	--pic_width $SPINNER_WIDTH \
 	--pic_height $SPINNER_HEIGHT \
@@ -170,6 +170,6 @@ convert -alpha remove \
 	--blob spinner72.rgb \
 	--blob spinner73.rgb \
 	--blob spinner74.rgb \
-	bootsplash-manjaro-glitch
+	bootsplash-linux-srbija
 
 rm *.rgb

@@ -1,5 +1,5 @@
-pkgbase = bootsplash-theme-manjaro-glitch
-	pkgdesc = Simple Manjaro Bootsplash with cool glitch effect
+pkgbase = bootsplash-theme-linux-srbija
+	pkgdesc = Simple Manjaro Bootsplash with Android Srbija theme
 	pkgver = 1.0
 	pkgrel = 1
 	arch = x86_64
@@ -8,8 +8,8 @@ pkgbase = bootsplash-theme-manjaro-glitch
 	options = !libtool
 	options = !emptydirs
 	source = bootsplash-packer
-	source = bootsplash-manjaro-glitch.sh
-	source = bootsplash-manjaro-glitch.initcpio_install
+	source = bootsplash-linux-srbija.sh
+	source = bootsplash-linux-srbija.initcpio_install
 	source = logo.gif
 	source = spinner.gif
 	sha256sums = SKIP
@@ -18,6 +18,6 @@ pkgbase = bootsplash-theme-manjaro-glitch
 	sha256sums = SKIP
 	sha256sums = SKIP
 
-pkgname = bootsplash-theme-manjaro-glitch
-	pkgdesc = Simple Manjaro Bootsplash with cool glitch effect
+pkgname = bootsplash-theme-linux-srbija
+	pkgdesc = Simple Manjaro Bootsplash with Android Srbija theme
 
