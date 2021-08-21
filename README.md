@@ -1,6 +1,9 @@
 # Description
 Bootsplash theme for Manjaro Linux. 
 
+# Preview
+![preview](https://raw.githubusercontent.com/eboye/bootsplash-theme-linux-srbija/master/logo.gif "preview")
+
 # Installation & configuration
 
 `git clone https://github.com/eboye/bootsplash-theme-linux-srbija.git`
