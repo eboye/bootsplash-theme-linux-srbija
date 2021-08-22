@@ -10,7 +10,7 @@ Bootsplash theme for Manjaro Linux.
 
 `cd bootsplash-theme-linux-srbija`
 
-Run `chmod +x bootsplash-packer bootsplash-linux-srbija.sh`
+Run `chmod +x bootsplash-packer bootsplash-theme-linux-srbija.sh`
 
 Run `makepkg` to create Arch package and install it with `pacman -U %packagename%`
 

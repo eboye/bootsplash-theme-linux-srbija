@@ -170,6 +170,6 @@ convert -alpha remove \
 	--blob spinner72.rgb \
 	--blob spinner73.rgb \
 	--blob spinner74.rgb \
-	bootsplash-linux-srbija
+	bootsplash-theme-linux-srbija
 
 rm *.rgb
